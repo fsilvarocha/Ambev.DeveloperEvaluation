@@ -1,6 +1,5 @@
-﻿using Ambev.DeveloperEvaluation.Application.Products.CreateProduct;
-using Ambev.DeveloperEvaluation.Application.Products.Queries.DTOs;
-using Ambev.DeveloperEvaluation.Application.Products;
+﻿using Ambev.DeveloperEvaluation.Application.Products;
+using Ambev.DeveloperEvaluation.Application.Products.CreateProduct;
 using Ambev.DeveloperEvaluation.Common.Validation;
 using Ambev.DeveloperEvaluation.WebApi.Common;
 using Ambev.DeveloperEvaluation.WebApi.Features.Products.CreateProduct;
@@ -50,13 +49,5 @@ public class ProductsController : BaseController
             Message = "Product created successfully",
             Data = _mapper.Map<CreateProductResponse>(response)
         });
-    }
-    [HttpGet]
-    [ProducesResponseType(typeof(PaginatedResponse<ListProductsItemResponseDTO>), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> ListProducts([FromQuery] ListProductsFilterDTO filter)
-    {
-        return OkPaginated(await _productQueries.ListProductsAsync(filter));
-
     }
 }
