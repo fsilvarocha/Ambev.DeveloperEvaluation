@@ -12,6 +12,7 @@ public class DefaultContext : DbContext, IUnitOfWork
 {
     private readonly IMediator _mediator;
     public DbSet<User> Users { get; set; }
+    public DbSet<Company> Companys { get; set; }
     public DbSet<Category> Categorys { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Sale> Sales { get; set; }
