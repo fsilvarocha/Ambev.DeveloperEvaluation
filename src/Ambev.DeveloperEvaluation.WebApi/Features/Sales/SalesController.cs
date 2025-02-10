@@ -1,9 +1,13 @@
-﻿using Ambev.DeveloperEvaluation.Application.Sales.Commands.CancelSale;
+﻿using Ambev.DeveloperEvaluation.Application.Sales.Commands.AddOrRemoveItemSale;
+using Ambev.DeveloperEvaluation.Application.Sales.Commands.CancelSale;
 using Ambev.DeveloperEvaluation.Application.Sales.Commands.FinisheSale;
 using Ambev.DeveloperEvaluation.Application.Sales.Commands.StartSale;
 using Ambev.DeveloperEvaluation.Common.Validation;
 using Ambev.DeveloperEvaluation.WebApi.Common;
+using Ambev.DeveloperEvaluation.WebApi.Features.Sales.AddOrRemoveItemSale;
 using Ambev.DeveloperEvaluation.WebApi.Features.Sales.CancelSale;
+using Ambev.DeveloperEvaluation.WebApi.Features.Sales.FinisheSale;
+using Ambev.DeveloperEvaluation.WebApi.Features.Sales.StartSale;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

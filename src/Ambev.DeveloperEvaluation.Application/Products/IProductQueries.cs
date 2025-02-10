@@ -1,4 +1,5 @@
-﻿using Ambev.DeveloperEvaluation.Common.Utils;
+﻿using Ambev.DeveloperEvaluation.Application.Products.Queries.DTOs;
+using Ambev.DeveloperEvaluation.Common.Utils;
 
 namespace Ambev.DeveloperEvaluation.Application.Products;
 

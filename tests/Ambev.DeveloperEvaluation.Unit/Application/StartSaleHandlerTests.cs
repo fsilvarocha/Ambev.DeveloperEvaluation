@@ -2,7 +2,9 @@
 using Ambev.DeveloperEvaluation.Common.Validation;
 using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.Domain.Repositories;
+using Ambev.DeveloperEvaluation.Unit.Application.TestData;
 using AutoMapper;
+using FluentAssertions;
 using MediatR;
 using NSubstitute;
 using Xunit;
